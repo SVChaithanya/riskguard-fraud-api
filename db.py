@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE = os.getenv("DATABASE","postgresql://postgres:surya_851973@localhost:5432/funds_db")
+DATABASE = os.getenv("DATABASE")
 if not DATABASE:
     raise ValueError("DATABASE_URL is not set")
 
