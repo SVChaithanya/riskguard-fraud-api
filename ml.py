@@ -9,7 +9,7 @@ from sklearn.metrics import roc_auc_score
 from sklearn.calibration import CalibratedClassifierCV
 from xgboost import XGBClassifier
 
-df = pd.read_csv(r"C:\Users\surya\ML_Project\fraud.csv")
+df = pd.read_csv(r"fraud.csv")
 
 X = df.drop(columns=['Class', 'Time'])
 y = df['Class']
